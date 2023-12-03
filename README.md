@@ -65,18 +65,28 @@ was renamed to avoid conflicts. The LICENSE is also unchanged.
 There is one exception. hid.h has a small change to avoid a name conflict
 with the ESP32-BLE-Keyboard library.
 
+## Examples
+
+### hid_host_example
 The following INO file is derived from the Espressif hid_host_example.c file
 with small modifications for the Arduino IDE. The README.md file is unchanged.
 
 * examples/hid_host_example/hid_host_example.ino
 * examples/hid_host_example/README.md
 
+### hid_host_joystick
 The following INO file is derived from the Espressif hid_host_example.c file
 with support for some gaming joysticks. The README.md file below has more
 details.
 
 * examples/hid_host_example/hid_host_joystick.ino
 * examples/hid_host_example/README.md
+
+### USBHostKeyboardBLE
+A simple USB keyboard to BLE keyboard converter example.
+
+* examples/USBHostKeyboardBLE/USBHostKeyboardBLE.ino
+* examples/USBHostKeyboardBLE/README.md
 
 ## Sample output
 
