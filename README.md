@@ -9,7 +9,7 @@ correct directory.
 Tested using Arduino IDE 1.8.19 and
 [Espressif ESP32-BOX-S3-3 with USB host dock](https://github.com/espressif/esp-box/blob/master/docs/hardware_overview/esp32_s3_box_3/hardware_overview_for_box_3.md)
 
-![USB Host Keyboard](./images/dock_usb_host_keyboard.png)
+![USB Host Keyboard](./images/keybo.png)
 
 In the picture above, the USB keyboard is plugged into the blue dock. The USB
 power bank powers the dock, the USB keyboard, and the ESP32 Box. The USB UART
@@ -22,7 +22,7 @@ out to the Type A connector.
 
 ## Serial Console
 
-Since the USB OTG port is on host mode, it cannot be used for Serial Console.
+Since the USB OTG port is in host mode, it cannot be used for Serial Console.
 Set 'USB CDC on Boot: "Disabled"' so Serial Console and code upload are done
 using UART0.
 
@@ -42,7 +42,7 @@ and the USB keyboard.
 To get more details on how the code works, set the Core Debug Level to "Info".
 
 Use the BOOT and RESET buttons on the side of the ESP32 Box to put the ESP32 in
-to bootloader upload mode. After the upload is done, RESET or power cycle the
+to boot loader upload mode. After the upload is done, RESET or power cycle the
 ESP32 Box to start running the sketch.
 
 ## ESP-IDF USB Host docs
@@ -87,6 +87,12 @@ A simple USB keyboard to BLE keyboard converter example.
 
 * examples/USBHostKeyboardBLE/USBHostKeyboardBLE.ino
 * examples/USBHostKeyboardBLE/README.md
+
+### keybo
+A simple USB keyboard to BLE keyboard converter example with Bongo Cat animation
+
+* examples/keybo/keybo.ino
+* examples/keybo/README.md
 
 ## Sample output
 
