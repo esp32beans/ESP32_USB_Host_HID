@@ -88,11 +88,16 @@ A simple USB keyboard to BLE keyboard converter example.
 * examples/USBHostKeyboardBLE/USBHostKeyboardBLE.ino
 * examples/USBHostKeyboardBLE/README.md
 
-### keybo
+### keybocat
 A simple USB keyboard to BLE keyboard converter example with Bongo Cat animation
 
-* examples/keybo/keybo.ino
-* examples/keybo/README.md
+* examples/keybocat/keybocat.ino
+* examples/keybocat/README.md
+* examples/keybocat/bongocat.cpp
+* examples/keybocat/bongocat.h
+* examples/keybocat/cat_idle_png.h
+* examples/keybocat/cat_left_png.h
+* examples/keybocat/cat_right_png.h
 
 ## Sample output
 
