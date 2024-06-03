@@ -89,6 +89,9 @@ A simple USB keyboard to BLE keyboard converter example.
 * examples/USBHostKeyboardBLE/README.md
 
 ### keybocat
+
+Install using the Arudino IDE Library Manager the library "PNGdec" by Larry Bank.
+
 A simple USB keyboard to BLE keyboard converter example with Bongo Cat animation
 
 * examples/keybocat/keybocat.ino

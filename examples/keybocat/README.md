@@ -25,6 +25,10 @@ to use NimBLE. This sketch has only been tested using NimBLE.
 
 Install "NimBLE-Arduino" by h2zero using the Arduino IDE Library Manager.
 
+## PNG decode library
+
+Install using the Arudino IDE Library Manager the library "PNGdec" by Larry Bank.
+
 ## Troubleshooting
 
 If keystrokes do not appear on the BLE host, make sure NimBLE has been

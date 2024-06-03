@@ -506,7 +506,7 @@ static void usb_lib_task(void *arg) {
   };
 
   ESP_ERROR_CHECK(usb_host_install(&host_config));
-  xTaskNotifyGive(arg);
+  xTaskNotifyGive((TaskHandle_t)arg);
 
   while (true) {
     uint32_t event_flags;

@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: Unlicense OR CC0-1.0
  */
 
+#include "driver/gpio.h"
 #include "usb/usb_host.h"
 
 #include "hid_host.h"
@@ -423,7 +424,7 @@ static void usb_lib_task(void *arg) {
   };
 
   ESP_ERROR_CHECK(usb_host_install(&host_config));
-  xTaskNotifyGive(arg);
+  xTaskNotifyGive((TaskHandle_t)arg);
 
   while (gpio_get_level(APP_QUIT_PIN) != 0) {
     uint32_t event_flags;
